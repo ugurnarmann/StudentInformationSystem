@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "974689533685",
+    "project_id": "yoksis-9140a",
+    "storage_bucket": "yoksis-9140a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:974689533685:android:64a2a581b0ed59a7a30fbc",
+        "android_client_info": {
+          "package_name": "com.example.yoklama_sistemi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "974689533685-lqpqfgn83o7f7arfjmc57vcmv1k67rht.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAaChelvGE7tk-SY6To12JWzYDWUhvHDmI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "974689533685-lqpqfgn83o7f7arfjmc57vcmv1k67rht.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
