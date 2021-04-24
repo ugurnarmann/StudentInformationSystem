@@ -10,7 +10,7 @@ class AdminDashboard extends StatelessWidget {
     return Scaffold(
       body: Center(
         child: Text(
-          'ADMIN DASHBOARD EKRANI',
+          'ADMIN DASHBOARD EKRANI !',
         ),
       ),
     );
