@@ -19,7 +19,7 @@ class Login extends StatelessWidget {
         onLogin: _authService.signIn,
         onSignup: _authService.signIn,
         onSubmitAnimationCompleted: () {
-          _authDashboard.navigate(context,_authService);
+          _authDashboard.navigate(context, _authService);
         },
         onRecoverPassword: (_) => Future(null),
         emailValidator: emailValidator,
@@ -33,6 +33,10 @@ class Login extends StatelessWidget {
           flushbarTitleSuccess: 'Başarılı',
           goBackButton: 'Geri',
           confirmPasswordError: 'Yanlış Email Şifre Kombinasyonu !',
+        ),
+        theme: LoginTheme(
+          primaryColor: Colors.green[500],
+          accentColor: Colors.green[500],
         ),
       ),
     );
