@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>377942059418-gqi5psuf8c18p6rjhh5oo2aaprs6kk3a.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.377942059418-gqi5psuf8c18p6rjhh5oo2aaprs6kk3a</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBJt9PiwBWxToC_9--77At1bx-k4GqSSP8</string>
+	<key>GCM_SENDER_ID</key>
+	<string>377942059418</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.example.yoklamaSistemi</string>
+	<key>PROJECT_ID</key>
+	<string>yoklama-sistemi-94e92</string>
+	<key>STORAGE_BUCKET</key>
+	<string>yoklama-sistemi-94e92.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:377942059418:ios:8a9bc5cfb4208345e13223</string>
+</dict>
+</plist>
