@@ -34,10 +34,7 @@ class Login extends StatelessWidget {
           goBackButton: 'Geri',
           confirmPasswordError: 'Yanlış Email Şifre Kombinasyonu !',
         ),
-        theme: LoginTheme(
-          primaryColor: Colors.green[500],
-          accentColor: Colors.green[500],
-        ),
+        
       ),
     );
   }
