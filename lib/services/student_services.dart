@@ -18,13 +18,19 @@ class StudentService {
       'name': student.name,
       'mail': student.mail,
       'faculty': student.faculty,
-      'deph':student.deph,
+      'deph': student.deph,
       'photo': student.photo,
     });
   }
 
   Stream<QuerySnapshot> getAllStudents() {
     return students.orderBy('name').snapshots();
+  }
+
+  Stream<QuerySnapshot> getStudent() {
+    final FirebaseAuth _auth = FirebaseAuth.instance;
+    var user=_auth.currentUser;
+    return students.where('mail', isEqualTo: user.email).snapshots();
   }
 
   updateStudent(selectedDoc, Student data) async {

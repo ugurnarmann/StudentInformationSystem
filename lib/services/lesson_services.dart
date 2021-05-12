@@ -1,6 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:yoklama_sistemi/models/lesson.dart';
-import 'package:yoklama_sistemi/models/teacher.dart';
 
 class LessonService {
   final lessons = FirebaseFirestore.instance.collection('lessons');
