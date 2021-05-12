@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'exit_button.dart';
 
 class AvatarAndName extends StatelessWidget {
   final String networkImageUrl;

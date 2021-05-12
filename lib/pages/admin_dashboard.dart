@@ -59,7 +59,7 @@ class AdminDashboard extends StatelessWidget {
                         ),
                         CardWidgetButton(
                           assetImageDirectory: 'assets/images/books.svg',
-                          text: 'Dersleri Göster/Düzenle',
+                          text: 'Dersleri Göster/Sil',
                           navigateTo: ShowLessonPage(),
                         ),
                       ],

@@ -1,12 +1,13 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter_login/flutter_login.dart';
+import 'package:yoklama_sistemi/models/student.dart';
 
 class AuthService {
   final FirebaseAuth _auth = FirebaseAuth.instance;
   final FirebaseFirestore _fireStore = FirebaseFirestore.instance;
   String name;
-  String password ;
+  String password;
 
 //giriş yap
   Future<String> signIn(LoginData data) async {
@@ -42,5 +43,28 @@ class AuthService {
         .doc(user.user.uid)
         .set({'name': name, 'lastName': lastName});
     return user.user;
+  }
+
+  Future registerUserWithEmailAndPassword(String email, String password) async {
+    try {
+      var result = await _auth.createUserWithEmailAndPassword(
+          email: email, password: password);
+      var user = result.user;
+      return user.uid;
+    } catch (e) {
+      print(e.toString());
+      return null;
+    }
+  }
+
+  Future deleteUserWithEmail(String email) async {
+    try {
+      var user = _auth.currentUser;
+      await user.delete();
+      return user.uid;
+    } catch (e) {
+      print(e.toString());
+      return null;
+    }
   }
 }

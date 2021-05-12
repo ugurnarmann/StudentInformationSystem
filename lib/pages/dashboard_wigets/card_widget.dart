@@ -32,7 +32,7 @@ class CardWidgetButton extends StatelessWidget {
           children: [
             SvgPicture.asset(
               assetImageDirectory,
-              height: 128,
+              height: 100,
             ),
             Text(
               text,

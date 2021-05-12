@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:yoklama_sistemi/models/lesson.dart';
 import 'package:yoklama_sistemi/pages/admin_dashboard.dart';
 import 'package:yoklama_sistemi/pages/base_widgets/header.dart';
 import 'package:yoklama_sistemi/pages/dashboard_wigets/avatar_and_name.dart';
@@ -37,12 +38,13 @@ class _ShowLessonPageState extends State<ShowLessonPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      'Dersleri Göster',
+                      'Dersleri Göster / \nDüzenle',
                       style: TextStyle(
                         fontFamily: 'Montserrat Medium',
                         color: Colors.black38,
                         fontSize: 24,
                       ),
+                      textAlign: TextAlign.center,
                     ),
                   ],
                 ),
@@ -63,14 +65,22 @@ class _ShowLessonPageState extends State<ShowLessonPage> {
                           DocumentSnapshot lesson = snapshot.data.docs[index];
                           return Card(
                             child: ListTile(
-                              /*leading: CircleAvatar(
-                                radius: 32,
-                                backgroundImage: NetworkImage(
-                                  lesson['photo'],
-                                ),
-                              ),*/
-                              title: Text(lesson['lesson_name']),
-                              subtitle: Text(lesson['teacher_name']),
+                              
+                              title: Text(lesson['lessonName']),
+                              subtitle: Text(lesson['teacherName']),
+                              trailing: Row(
+                                mainAxisSize: MainAxisSize.min,
+                                children: [
+                                  
+                                  IconButton(
+                                    icon: Icon(Icons.delete),
+                                    color: Colors.black38,
+                                    onPressed: () async{
+                                       _lessonService.deleteLesson(lesson.id);
+                                    },
+                                  ),
+                                ],
+                              ),
                             ),
                           );
                         },
