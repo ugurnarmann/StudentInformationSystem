@@ -11,9 +11,7 @@ class AuthDashboard {
           builder: (context) => DashboardScreen(),
         ),
       );
-    }
-    else
-    {
+    } else {
       return Navigator.of(context).pushReplacement(
         MaterialPageRoute(
           builder: (context) => AdminDashboard(),

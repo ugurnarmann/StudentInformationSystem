@@ -29,7 +29,7 @@ class StudentService {
 
   Stream<QuerySnapshot> getStudent() {
     final FirebaseAuth _auth = FirebaseAuth.instance;
-    var user=_auth.currentUser;
+    var user = _auth.currentUser;
     return students.where('mail', isEqualTo: user.email).snapshots();
   }
 

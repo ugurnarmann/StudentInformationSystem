@@ -51,7 +51,9 @@ class DashboardScreen extends StatelessWidget {
                             CardWidgetButton(
                               assetImageDirectory: 'assets/images/student.svg',
                               text: 'Bilgilerim',
-                              navigateTo: MyAccountScreen(),
+                              navigateTo: MyAccountScreen(
+                                data: snapshot.data.docs[0],
+                              ),
                             ),
                             CardWidgetButton(
                               assetImageDirectory: 'assets/images/calendar.svg',
