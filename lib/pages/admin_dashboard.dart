@@ -6,18 +6,16 @@ import 'package:yoklama_sistemi/pages/admin_dashboard_pages/add_student_page.dar
 import 'package:yoklama_sistemi/pages/admin_dashboard_pages/show_lesson_page.dart';
 import 'package:yoklama_sistemi/pages/admin_dashboard_pages/show_student_page.dart';
 import 'package:yoklama_sistemi/pages/dashboard_wigets/exit_button.dart';
-import 'package:yoklama_sistemi/services/student_services.dart';
 
 import 'base_widgets/header.dart';
 import 'dashboard_wigets/avatar_and_name.dart';
 import 'dashboard_wigets/card_widget.dart';
 
-StudentService _studentService = StudentService();
 List students = [];
 
 class AdminDashboard extends StatelessWidget {
   const AdminDashboard({Key key, LoginData email}) : super(key: key);
-  
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -31,7 +29,7 @@ class AdminDashboard extends StatelessWidget {
                 children: [
                   AvatarAndName(
                     networkImageUrl:
-                        'https://www.tccb.gov.tr/assets/resim/genel/receptayyiperdogan-bio.jpg',
+                        'https://tibatu.com/wp-content/uploads/2020/10/flat-business-man-user-profile-avatar-icon-vector-4333097-768x768.jpg       ',
                     name: 'Yönetici',
                     title: 'Sistem Yöneticisi',
                     headerRightButton: ExitButton(),

@@ -31,7 +31,7 @@ class _ShowStudentPageState extends State<ShowStudentPage> {
               children: [
                 AvatarAndName(
                   networkImageUrl:
-                      'https://www.tccb.gov.tr/assets/resim/genel/receptayyiperdogan-bio.jpg',
+                      'https://tibatu.com/wp-content/uploads/2020/10/flat-business-man-user-profile-avatar-icon-vector-4333097-768x768.jpg',
                   name: 'Yönetici',
                   title: 'Sistem Yöneticisi',
                   headerRightButton: GoBackButton(
