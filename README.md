@@ -9,6 +9,7 @@ Flutter Student Information App.
 - flutter run
 
 ## UI (Admin Dashboard)
+<img src="https://user-images.githubusercontent.com/68778235/121813316-3311a880-cc74-11eb-94dd-d4ab7516d703.png" alt="UI Admin Dashboarde" width="250"/>
 
 ![UI Admin Dashboard](https://user-images.githubusercontent.com/68778235/121813316-3311a880-cc74-11eb-94dd-d4ab7516d703.png "Title")
 
